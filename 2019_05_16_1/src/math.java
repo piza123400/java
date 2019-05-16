@@ -42,24 +42,24 @@ public class math {
 		switch (keycode) {
 		case '+':
 			
-			System.out.println(Add.add(j, j));
+			System.out.println(Add.add(i, j));
 
 			break;
 
 		case '-':
-			System.out.println(Sub.sub(j, j));
+			System.out.println(Sub.sub(i, j));
 			
 			break;
 			
 		case '*':
 			
-			System.out.println(Mul.mul(j, j));
+			System.out.println(Mul.mul(i, j));
 			
 			break;
 			
 		case '/':
 			
-			System.out.println(Div.div(j, j));
+			System.out.println(Div.div(i, j));
 			
 			break;
 			
