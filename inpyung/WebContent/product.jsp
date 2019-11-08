@@ -19,8 +19,9 @@
 	
 	<% 
 		String id = request.getParameter("id");
-		Product product = productDAO.getProductById(id); 
 		ProductRepository dao = ProductRepository.getInstance();
+		Product product = dao.getProductById(id); 
+		
 		//Product product = dao.getProductById(id);
 	
 	%>
@@ -35,7 +36,7 @@
 					<p> <b>분류</b> : <%=product.getCategory() %>
 					<p> <b>재고 수</b> : <%=product.getUnitsInStock() %>
 					<h4><%=product.getUnitPrice() %>원</h4>
-					<p><a href="#" class="btn btn-info">상품주문 &raquo; </a>
+					<p><a href="./addProduct.jsp" class="btn btn-info">상품주문 &raquo; </a>
 					<a href="./products.jsp" class="btn btn-secondary">상품목록 &raquo; </a>
 			
 			
