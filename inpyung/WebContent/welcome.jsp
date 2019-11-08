@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=utf-8"%>
+<%@ page import = "java.util.Date" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -30,11 +31,24 @@
 				<%= tagline %>
 			</h3>
 			
-		response.setIntHeader("Refresh",5);
-		Date day = new java.util.Date();
-		String am_pm;
-		
-		
+			<% 
+				Date day = new java.util.Date();
+			String am_pm;
+			int hour = day.getHours();
+			int second = day.getSeconds();
+			int minute = day.getMinutes();
+			if(hour/12==0){
+				am_pm = "am";
+			}else {
+				am_pm="PM";
+				hour = hour - 12;
+			}
+			String CT = hour+":"+minute+":"+second+" "+am_pm;
+			out.print("현재접속시간:" + CT +"\n");
+			
+				
+			
+			%>
 		
 		</div>
 	</div>
