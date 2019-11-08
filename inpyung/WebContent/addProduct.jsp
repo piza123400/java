@@ -19,8 +19,7 @@
 	</div>
 
 	<div class="container">
-		<form name="newProduct" action="./processAddProduct.jsp"
-			class="form-horizontal" method="post">
+		<form name="newProduct" action="./processAddProduct.jsp" class="form-horizontal" method="post">
 			<div class="form-group row">
 				<label class="col-sm-2">상품 코드</label>
 				<div class="col-sm-3">
@@ -43,7 +42,7 @@
 			</div>
 
 			<div class="form-group row">
-				<label class="col-sm-2">상세정보</label>
+				<label class="col-sm-2">상세 정보</label>
 				<div class="col-sm-3">
 					<textarea name="description" cols="50" rows="2"
 						class="form-control"></textarea>
@@ -67,16 +66,16 @@
 			<div class="form-group row">
 				<label class="col-sm-2">재고 수</label>
 				<div class="col-sm-3">
-					<input type="text" name="unitsInstock" class="form-control">
+					<input type="text" name="unitsInStock" class="form-control">
 				</div>
 			</div>
 
 			<div class="form-group row">
 				<label class="col-sm-2">상태</label>
 				<div class="col-sm-3">
-					<input type="radio" name="condition" value="New">신규제품 <input
-						type="radio" name="condition" value="Old">재생 제품 <input
-						type="radio" name="condition" value="Refurbished">늙은 제품
+					<input type="radio" name="condition" value="New">신규제품
+					 <input type="radio" name="condition" value="Old">재생 제품
+					  <input type="radio" name="condition" value="Refurbished">늙은 제품
 				</div>
 			</div>
 

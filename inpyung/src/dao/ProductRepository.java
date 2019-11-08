@@ -49,15 +49,16 @@ public class ProductRepository {
 		
 		
 	}
-	
-	public ArrayList<Product>getAllProducts(){
-		return listOProducts;
-	}
 	public void addProduct(Product product){
 		
 		listOProducts.add(product);
 		
+	}	
+	
+	public ArrayList<Product>getAllProducts(){
+		return listOProducts;
 	}
+	
 	public Product getProductById(String productId) {
 		Product productById = null;
 	
@@ -73,5 +74,5 @@ public class ProductRepository {
 	return productById;
 	
 	}
-
+	
 }

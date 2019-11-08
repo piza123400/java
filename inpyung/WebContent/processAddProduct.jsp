@@ -11,7 +11,7 @@
 		String description = request.getParameter("description");
 		String manufacturer = request.getParameter("manufacturer");
 		String category = request.getParameter("category");
-		String unitsInStock = request.getParameter("unitsInstock");
+		String unitsInStock = request.getParameter("unitsInStock");
 		String condition = request.getParameter("condition");
 		
 		Integer price;
@@ -35,8 +35,9 @@
 		newProduct.setPname(name);
 		newProduct.setUnitPrice(price);
 		newProduct.setDescription(description);
+		newProduct.setManufacturer(manufacturer);
 		newProduct.setCategory(category);
-		newProduct.setUnitsInStock(price);
+		newProduct.setUnitsInStock(stock);
 		newProduct.setCondition(condition);
 		
 		dao.addProduct(newProduct);
