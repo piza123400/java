@@ -11,8 +11,7 @@
 		String unitPrice = request.getParameter("unitPrice");
 		String description = request.getParameter("description");
 		String manufacturer = request.getParameter("manufacturer");
-		String category = request.getParameter("category");
-		
+		String category = request.getParameter("category");		
 		String unitsInStock = request.getParameter("unitsInstock");
 		String condition = request.getParameter("condition");
 
