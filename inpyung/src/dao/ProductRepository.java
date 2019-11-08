@@ -22,22 +22,25 @@ public class ProductRepository {
 		phone.setCategory("P1234");
 		phone.setManufacturer("P1234");
 		phone.setUnitsInStock(1000);
-		phone.setCondition("P1234");
+		phone.setCondition("New");
+		phone.setFilename("P1234.jpg");
+		
 		
 		Product notebook = new Product("P1123234","Phi2oe",234234234);
 		notebook.setDescription("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
 		notebook.setCategory("P1123234");
 		notebook.setManufacturer("P1234");
 		notebook.setUnitsInStock(11000);
-		notebook.setCondition("P1234");
+		notebook.setCondition("refurbished");
+		notebook.setFilename("P123.jpg");
 		
 		Product tablet = new Product("P1123234","Phi3oe",234234234);
 		tablet.setDescription("ccccccccccccccccccccccccccccccccccc");
 		tablet.setCategory("P1123234");
 		tablet.setManufacturer("P1123234");
 		tablet.setUnitsInStock(101100);
-		tablet.setCondition("P1123234");
-		
+		tablet.setFilename("P12.jpg");
+
 		listOProducts.add(phone);
 		listOProducts.add(notebook);
 		listOProducts.add(tablet);
